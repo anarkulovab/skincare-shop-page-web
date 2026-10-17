@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Skin Shop — уходовая косметика</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">DEAR SKIN</div>
+            <ul>
+                <li class="btns" data-section="hero">Главная</li>
+                <li class="btns" data-section="catalog">Каталог</li>
+                <li class="btns" data-section="about">О нас</li>
+                <li class="btns" data-section="faq">Вопросы</li>
+                <li class="btns" data-section="contacts">Контакты</li>
+            </ul>
+            <div class="cart-icon" id="cartIcon">
+                🛒 <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="text_block">
+            <div class="main_text">Твое сияние начинается здесь.</div>
+            <p>Натуральная уходовая косметика для здоровой и сияющей кожи</p>
+            <button class="btn1" id="catalogBtn">Подобрать уход</button>
+        </div>
+        <div class="image-block">
+            <img src="https://i.pinimg.com/originals/49/02/06/490206d7ccc21a88ec6e0c4c6d21df04.jpg?nii=t"
+                alt="Косметика">
+        </div>
+    </section>
+
+
+    <section class="catalog" id="catalog">
+        <h2>Наши хиты</h2>
+        <div class="products-grid" id="productsGrid">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>О бренде Dear Skin</h2>
+            <p>Мы создаём косметику, которая заботится о вашей коже и окружающей среде. Натуральные ингредиенты,
+                отсутствие жестких ингридиентов и любовь к каждому продукту - наши главные принципы.</p>
+            <p>Каждая баночка создана с душой, чтобы ваша кожа сияла здоровьем.</p>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-item">
+            <div class="faq-question">Из каких ингредиентов сделана косметика?</div>
+            <div class="faq-answer">Мы используем только натуральные компоненты: масла ши, жожоба, экстракты растений и
+                витамины. Без парабенов и сульфатов.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Есть ли доставка по России?</div>
+            <div class="faq-answer">Да, мы доставляем по всей России. Сроки доставки от 2 до 7 дней в зависимости от
+                региона.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Можно ли вернуть товар?</div>
+            <div class="faq-answer">Да, вы можете вернуть товар в течение 14 дней, если он не был в использовании и
+                сохранена упаковка.</div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Будьте в курсе</h2>
+        <p>Подпишитесь на рассылку и получите скидку 10% на первый заказ</p>
+        <form id="subscribeForm">
+            <input type="email" placeholder="Ваш email" required>
+            <button type="submit">Подписаться</button>
+        </form>
+        <p id="subscribeMessage"></p>
+    </section>
+
+    <footer id="contacts">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Dear Skin</h4>
+                <p>Забота о вашей коже — наша миссия</p>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>+7 (999) 123-45-67</p>
+                <p>hello@dearskin.ru</p>
+            </div>
+            <div class="footer-col">
+                <h4>Адрес</h4>
+                <p>г. Москва, ул. Тверская, 15</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Dear Skin Shop. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h3>Корзина</h3>
+            <button id="closeCart">✖</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p>Корзина пуста</p>
+        </div>
+        <div class="cart-total">
+            <strong>Итого: <span id="cartTotal">0</span> ₽</strong>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+</body>
+
+</html>
